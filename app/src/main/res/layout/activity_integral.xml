@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/color_d33e37" >
+
+        <RelativeLayout
+            android:id="@+id/btn_title_btn_back_layout"
+            style="@style/title_btn_back_layout" >
+
+            <ImageView
+                android:id="@+id/back_top_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dip"
+                android:src="@drawable/common_selector_top_back" />
+        </RelativeLayout>
+
+        <TextView
+            style="@style/title_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="积分详情" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dip"
+        android:background="@color/white" >
+
+        <ImageView
+            android:id="@+id/my_integral_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dip"
+            android:src="@drawable/my_integral" />
+
+        <TextView
+            android:id="@+id/my_integral_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dip"
+            android:layout_toRightOf="@id/my_integral_img"
+            android:text="@string/integral_mine"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/integral_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/my_integral_tv"
+            android:textColor="@color/color_1c1c1c"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/integral_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dip"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <com.dh.perfectoffer.handmark.pulltorefresh.library.PullToRefreshListView
+            android:id="@+id/pxlv_intergral"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:divider="@android:color/transparent"
+            android:scrollbars="none" />
+    </LinearLayout>
+
+    <include
+        android:id="@+id/ll_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/empty"
+        android:visibility="gone" />
+
+</LinearLayout>

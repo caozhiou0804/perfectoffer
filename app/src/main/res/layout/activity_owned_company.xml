@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/color_d33e37" >
+
+        <RelativeLayout
+            android:id="@+id/btn_title_btn_back_layout"
+            style="@style/title_btn_back_layout" >
+
+            <ImageView
+                android:id="@+id/back_top_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dip"
+                android:src="@drawable/common_selector_top_back" />
+        </RelativeLayout>
+
+        <TextView
+            style="@style/title_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="所属公司" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/company_list"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:scrollbars="none" >
+    </ListView>
+
+    <include
+        android:id="@+id/ll_empty"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        layout="@layout/empty"
+        android:visibility="gone" />
+
+</LinearLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dip"
+    android:background="@color/white"
+    android:paddingTop="15dp" >
+
+    <LinearLayout
+        android:id="@+id/company_name_ll"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:background="@null" >
+
+            <ImageView
+                android:id="@+id/iv_company"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/logos" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/company_name_rl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp" >
+
+            <TextView
+                android:id="@+id/company_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/company_content"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/company_name"
+                android:layout_marginRight="32dp"
+                android:layout_marginTop="3dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:textColor="#626262"
+                android:textSize="14sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/company_name_img"
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_below="@id/company_name_ll"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="5dip"
+        android:src="@color/gray_bg" />
+
+    <RelativeLayout
+        android:id="@+id/company_number_ll"
+        android:layout_width="match_parent"
+        android:layout_height="30dip"
+        android:layout_below="@id/company_name_img"
+        android:layout_marginLeft="70dp" >
+
+        <TextView
+            android:id="@+id/company_number_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="16dp"
+            android:layout_centerVertical="true"
+            android:text="职位数："
+            android:textColor="#e8321a"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/company_number"
+            android:layout_width="wrap_content"
+            android:layout_height="16dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/company_number_tv"
+            android:textColor="#e8321a"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dip"
+            android:src="@drawable/arrow" />
+    </RelativeLayout>
+
+</RelativeLayout>

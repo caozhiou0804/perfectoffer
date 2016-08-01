@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+
+    <include layout="@layout/my_common_top" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/white_nomal"
+                android:orientation="vertical"
+                android:paddingBottom="12dip" >
+
+                <TextView
+                    android:id="@+id/offic_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="8dp"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:text="IOS开发高级工程师"
+                    android:textSize="18sp" />
+
+                <LinearLayout
+                    android:id="@+id/time_fabu_ly"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/office_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="12dip"
+                        android:layout_marginTop="10dip"
+                        android:gravity="center_vertical"
+                        android:text="2016-12-24"
+                        android:textColor="#969696" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/office_salary"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_below="@id/offic_name"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="3dip"
+                    android:gravity="center_vertical"
+                    android:text="10000-20000/月"
+                    android:textColor="@color/color_d33e37"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:id="@+id/office_integration_rl"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dip"
+                    android:layout_below="@id/office_salary"
+                    android:layout_marginLeft="12dip"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:text="积分:"
+                        android:textColor="#ffa415"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/office_integration"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center_vertical"
+                        android:textColor="#ffa415" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/office_address_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/office_integration_rl"
+                    android:layout_marginLeft="12dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:gravity="center_vertical"
+                        android:text="地址:"
+                        android:textColor="#626262"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/office_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/color_1c1c1c"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/office_address_ll"
+                    android:layout_marginLeft="12dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="福利:"
+                        android:textColor="#626262"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/office_welfare"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center_vertical"
+                        android:lineSpacingExtra="2dp"
+                        android:textColor="@color/color_1c1c1c"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/offic_rule"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="#909090" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/white_nomal"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="8dp"
+                    android:orientation="vertical"
+                    android:paddingBottom="5dip" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_vertical"
+                        android:text="职位要求"
+                        android:textColor="#969696"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/office_claim"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:lineSpacingExtra="2dp"
+                        android:textColor="@color/color_1c1c1c" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/office_bt"
+                android:layout_width="match_parent"
+                android:layout_height="37dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="25dip"
+                android:layout_marginRight="25dip"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/btn_new"
+                android:text="推荐好友"
+                android:textColor="#ffffff"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

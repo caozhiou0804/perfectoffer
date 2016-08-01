@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">人才集结号</string>
+    <string name="fragment_my">个人信息</string>
+    <string name="username_hint">输入账号</string>
+    <string name="username_input">账号</string>
+    <string name="password_hint">输入密码</string>
+    <string name="password_input">密码</string>
+    <string name="opt_remember">记住密码</string>
+    <string name="login">登录</string>
+    <string name="zhuce">注册</string>
+    <string name="search">搜索</string>
+    <string name="search_hint">搜索职位</string>
+    <string name="title">最新职位</string>
+    <string name="rehitname">用户名:</string>
+    <string name="aganame">请输入用户名</string>
+    <string name="rehitpass">设置密码:</string>
+    <string name="agapass">请输入密码</string>
+    <string name="rehitagpass">确认密码:</string>
+    <string name="agarehitagpass">请确认密码</string>
+    <string name="reset">重置</string>
+    <string name="update">编辑</string>
+    <string name="zigongsi">子公司名称</string>
+    <string name="zhiwei">悬赏职位</string>
+    <string name="introduction">公司介绍</string>
+    <string name="logos">公司logo</string>
+    <string name="oldpass">旧密码:</string>
+    <string name="newpass">新密码:</string>
+    <string name="agaoldpass">请输入旧密码</string>
+    <string name="aganewpass">请输入新密码</string>
+    <string name="confirmnewpass">请确认新密码</string>
+
+    <!-- 悬赏 -->
+    <string name="fabushijian">发布时间：</string>
+    <string name="jinqian">赏金：</string>
+    <string name="shanjin">赏金会在入职满一个月后发放</string>
+    <string name="rewdetails">悬赏详情</string>
+    <string name="zhiwei_xuanshan">职位：</string>
+    <string name="yuexin">月薪：</string>
+    <string name="fuli">福利：</string>
+    <string name="yaoqiu">要求：</string>
+    <string name="zhiyeyaoqiu">职业要求：</string>
+    <string name="gongsidizhi">公司地址：</string>
+    <string name="toujianli">投简历</string>
+    <string name="jieshaopengy">介绍朋友</string>
+    <!-- 简历模板 -->
+    <string name="subname">所属公司</string>
+    <string name="office">所属职位</string>
+    <string name="empname">职员姓名</string>
+    <string name="plempname">请输入姓名</string>
+    <string name="sex">性别：</string>
+    <string name="age">年龄：</string>
+    <string name="plage"></string>
+    <string name="submit">提交</string>
+    <string name="phone">手机号码</string>
+    <string name="plphone">请输入手机号码</string>
+    <string name="schools">毕业学校</string>
+    <string name="plschools">请输入学校名称</string>
+    <string name="temtitle">简历信息</string>
+    <!-- 介绍朋友 -->
+    <string name="fried">朋友信息</string>
+    <string name="friedname">姓名</string>
+    <string name="plfriedname">请输入朋友姓名</string>
+    <string name="reservation">预约时间</string>
+    <string name="plfriedreservation">请选择日期</string>
+    <string name="remk">备注</string>
+    <string name="plremk">请输入备注</string>
+
+    <!-- wu -->
+    <string name="none">无备注</string>
+    <!-- 公司名称 -->
+    <string name="complay_1">江苏胜众</string>
+    <string name="complay_2">东汇征信</string>
+    <string name="complay_3">东汇集团</string>
+    <string name="complay_4">东汇超市</string>
+    <string name="complay_5">东汇宝</string>
+    <string name="complay_6">三汇金融</string>
+    <string name="complay_7">爱融汇</string>
+
+    <!-- my -->
+    <string name="basic">基本信息</string>
+    <string name="basic_n">姓名：</string>
+    <string name="basic_a">账号名：</string>
+    <string name="basic_r">我的赏金：</string>
+    <string name="basic_b">年龄：</string>
+    <string name="basic_resume">我的简历</string>
+    <string name="basic_history">投递历史</string>
+    <string name="basic_pass">修改密码</string>
+    <string name="basic_out">登出</string>
+    <string name="basic_null">无SD卡</string>
+    <string name="basic_select">选择图片</string>
+    <string name="basic_check">从相片中选择</string>
+    <string name="basic_cam">照相</string>
+    <string name="basic_age">岁</string>
+    <string name="basic_delete">删除成功</string>
+    <string name="basic_shere">确定删除简历:“</string>
+    <string name="basic_de">删除</string>
+    <string name="basic_time">推荐日期：</string>
+    <string name="application_date">申请时间：</string>
+    <string name="basic_boundy">获取积分：</string>
+    <string name="basic_null2">暂无图片</string>
+
+    <!-- 更多 -->
+    <string name="more">更多</string>
+    <string name="more_help">帮助</string>
+    <string name="more_relate">关于</string>
+    <string name="more_password">修改密码</string>
+    <string name="more_phone">更新手机号码</string>
+    <string name="more_update">检查更新</string>
+    <string name="more_feedback">反馈</string>
+    <string name="more_feed_back">意见反馈</string>
+    <string name="more_exit">退出登录</string>
+    <string name="more_login">登录</string>
+    <string name="more_toast">别点了,程序员放假了</string>
+    <string name="more_shure">确定退出登录？</string>
+    <string name="more_shure1">确定</string>
+    <string name="more_cancle">取消</string>
+    <string name="more_update_phone">更换手机号码</string>
+    <!--
+    <string name="more">更多</string>
+    <string name="more">更多</string>
+    -->
+
+
+    <!-- 注册界面 -->
+
+    <string name="re_id">用户名</string>
+    <string name="re_pass">密码</string>
+    <string name="re_password">密      码</string>
+    <string name="re_confrim">确认密码</string>
+    <string name="re_name">真实姓名</string>
+    <string name="re_phone">手机号码</string>
+    <string name="re_age">年龄</string>
+    <string name="re_sex">性别</string>
+    <string name="re_man">男</string>
+    <string name="re_woman">女</string>
+    <string name="re_user">请输入用户名</string>
+    <string name="re_pass2">请输入密码</string>
+    <string name="re_confrim2">请保持密码一致</string>
+    <string name="re_name2">请输入真实姓名</string>
+    <string name="re_phone2">请输入手机号码</string>
+    <string name="re_age2">请输入年龄</string>
+    <string name="re_true">请输入正确手机号码</string>
+    <string name="re_pass3">密码不能小于6位</string>
+    <string name="re_age3">年龄只能为10~99</string>
+    <string name="re_name3">输入的真实姓名含有特殊字符</string>
+    <string name="re_su">注册成功</string>
+    <string name="re_owned_company">所属公司</string>
+    <string name="owned_company_please">所属公司不能为空</string>
+
+    <!-- 修改手机号 -->
+    <string name="ph_confrim">确认更新</string>
+    <string name="ph_new">新手机号</string>
+    <string name="ph_con">更新手机号</string>
+    <string name="ph_re">与当前手机号一致，请重新输入</string>
+    <string name="ph_con1">请输入正确的手机号码</string>
+    <string name="ph_su">修改手机号码成功</string>
+
+    <!-- 修改密码 -->
+    <string name="pass_old">旧密码</string>
+    <string name="pass_new">新密码</string>
+    <string name="pass_confrim">确认密码</string>
+    <string name="pass_true">确认</string>
+    <string name="pass_hint">请输入您的宝贵意见</string>
+    <string name="pass_name">东汇人才悬赏令</string>
+    <string name="pass_up">修改密码</string>
+    <string name="pass_null1">旧密码为空</string>
+    <string name="pass_null2">新密码为空</string>
+    <string name="pass_rule">输入的新密码不能小于6位</string>
+    <string name="pass_name2">新密码与当前密码一致，请重新输入</string>
+    <string name="pass_confrim3">请确保两次输入的新密码一致</string>
+    <string name="pass_su">修改密码成功</string>
+
+    <!-- 登陆 -->
+    <string name="login_title">东汇人才召集令</string>
+    <string name="login_name">请输入用户名</string>
+    <string name="login_pass">密码</string>
+    <string name="login_register">注册</string>
+    <string name="login_bt">登录</string>
+    <string name="login_n">请输入用户名</string>
+    <string name="login_p">请输入密码</string>
+    <string name="login_s">登录成功</string>
+    <string name="login_register_fast">快速注册</string>
+
+    <!-- 推荐 -->
+    <string name="recom_t1">推荐简历</string>
+    <string name="recom_t2">新建简历</string>
+    <string name="recom_title">请输入简历名称</string>
+    <string name="recom_name">请输入姓名</string>
+    <string name="recom_age">请输入出生年月</string>
+    <string name="recom_school">请输入毕业院校</string>
+    <string name="recom_professional">请输入所学专业</string>
+    <string name="recom_phone">请输入正确手机号码</string>
+    <string name="recom_email">请输入正确邮箱</string>
+    <string name="recom_address">请输入目前居住地</string>
+    <string name="recom_title2">输入的简历含有特殊字符</string>
+    <string name="recom_name2">输入的姓名含有特殊字符</string>
+    <string name="recom_school2">输入的毕业院校含有特殊字符</string>
+    <string name="recom_professional2">输入的所学专业含有特殊字符</string>
+    <string name="recom_address2">输入的目前居住地含有特殊字符</string>
+    <string name="recom_remark2">输入的备注含有特殊字符</string>
+    <string name="recom_re1">新建简历成功</string>
+    <string name="recom_re2">修改简历成功</string>
+    <string name="recom_time">请选择正确时间</string>
+    <string name="recom_su">推荐成功</string>
+    <string name="recom_year1">小于2年</string>
+    <string name="recom_year2">2~3年</string>
+    <string name="recom_year3">3~5年</string>
+    <string name="recom_year4">5年以上</string>
+
+    <!-- 历史详情 -->
+    <string name="off_title">历史详情</string>
+    <!-- 简历选择 -->
+    <string name="choose">简历选择</string>
+    <!-- 职位 -->
+    <string name="info">职位信息</string>
+
+    <!-- 反馈 -->
+    <string name="feedback">反馈</string>
+    <string name="back_t1">随便写点也好啊</string>
+    <string name="back_t2">反馈成功</string>
+
+    <!-- 公司详情 -->
+    <string name="com_titie">公司信息</string>
+    <string name="com_bounty">积分: </string>
+    <string name="com_requre">要求: </string>
+    <string name="com_salary">月薪: </string>
+
+    <!-- 搜索职位 -->
+    <string name="search_title">搜索职位</string>
+    <string name="search_null">暂无此搜索职位</string>
+    <string name="search_null2">暂无数据</string>
+    <string name="search_hot">热门职位：</string>
+    <!--
+         <string name="com_titie">搜索职位</string>
+    <string name="com_titie">搜索职位</string>
+    <string name="com_titie">搜索职位</string>
+    <string name="com_titie">搜索职位</string>
+    -->
+
+
+    <!-- 积分 -->
+    <string name="integral_mine">我的积分：</string>
+
+    <!--
+    <string name="off_title">历史详情</string>
+    <string name="off_title">历史详情</string>
+    <string name="off_title">历史详情</string>
+    <string name="off_title">历史详情</string>
+    <string name="off_title">历史详情</string>
+    <string name="off_title">历史详情</string>
+    <string name="off_title">历史详情</string>
+    <string name="off_title">历史详情</string>
+    -->
+
+
+    <!-- 注册 -->
+    <style name="reCheckBoxman">
+        <item name="android:button">@drawable/register_checkboxman</item>
+    </style>
+
+    <style name="reCheckBoxwoman">
+        <item name="android:button">@drawable/register_checkboxwoman</item>
+    </style>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <!-- framework层 start -->
+    <string name="frame_tip_unlogin">未登录</string>
+    <string name="frame_tip_no_net">网络连接失败，请确认开启了wifi或手机卡网络!</string>
+    <string name="frame_tip_params_error">连接失败，入参格式不正确！</string>
+    <string name="frame_tip_conn_error">连接失败，平台正在维护中!</string>
+    <string name="frame_tip_parser_date_exception">连接失败，解析数据格式不正确!</string>
+    <string name="frame_tip_response_overtime_exception">连接失败，请求超时</string>
+    <string name="frame_tip_response_exception">连接失败，请稍候重试</string>
+    <string name="frame_tip_loading_date">获取数据中,请稍候..."</string>
+    <string name="open_fail">打开失败"</string>
+    <!-- framework层 end -->
+    <!-- pulltorefresh -->
+    <string name="pull_to_refresh_from_bottom_pull_label">上拉可以刷新</string>
+    <string name="pull_to_refresh_from_bottom_release_label">松开获取更多</string>
+    <string name="pull_to_refresh_from_bottom_refreshing_label">@string/pull_to_refresh_refreshing_label</string>
+    <string name="pull_to_refresh_pull_label" translatable="false">下拉动可以刷新</string>
+    <string name="pull_to_refresh_release_label" translatable="false">松开刷新\&#046;\&#046;\&#046;</string>
+    <string name="pull_to_refresh_refreshing_label" translatable="false">正在加载中…</string>
+    <string name="pull_to_refresh_tap_label" translatable="false">点击刷新</string>
+    <!-- 更新 -->
+    <string name="update_dialog_title">升级确认</string>
+    <string name="update_dialog_isnew">您的APP已是最新版本</string>
+    <string name="update_dialog_close">关闭</string>
+    <string name="update_dialog_iscanupdate">人才集结号发布新版APP啦!确认升级?</string>
+    <string name="update_dialog_check">正在更新最新版本</string>
+    <string name="update_notfoundfile">不存在安装文件</string>
+    <string name="update_download_fail">下载失败</string>
+    <string name="btn_ok">确定</string>
+    <string name="cancel">取消</string>
+    <!-- 更新end -->
+
+</resources>
