@@ -1157,10 +1157,10 @@ public class MyFragment extends VehicleFragment implements OnClickListener {
     }
 
     /**
-     * 
+     *
      * 保存裁剪之后的图片数据
-     * 
-     * 
+     *
+     *
      * @param picdata
      */
 

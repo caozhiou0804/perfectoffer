@@ -1,6 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <resources>
-
+    <color name="colorPrimary">#1da8fe</color>
+    <color name="colorPrimaryDark">#1da8fe</color>
+    <color name="colorAccent">#1da8fe</color>
     <!-- common colors start -->
     <color name="green">#7CCD7C</color>
     <color name="black">#000000</color>

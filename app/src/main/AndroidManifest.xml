@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
+<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.dh.perfectoffer"
     android:versionCode="1602252"
@@ -9,169 +8,169 @@
         android:minSdkVersion="14"
         android:targetSdkVersion="21" />
 
-
-    <application
-    android:name=".VehicleApp"
-    android:allowBackup="true"
-    android:icon="@drawable/logo"
-    android:label="@string/app_name"
-    android:theme="@style/AppTheme">
-
-    <activity
-        android:name="com.dh.perfectoffer.activity.LoginActivity"
-        android:screenOrientation="portrait"></activity>
-
-    <activity
-        android:name="com.dh.perfectoffer.activity.RegisterActivity"
-        android:screenOrientation="portrait"></activity>
-
-    <activity
-        android:name="com.dh.perfectoffer.activity.SearchActivity"
-        android:screenOrientation="portrait"></activity>
-
-    <activity
-        android:name="com.dh.perfectoffer.demo.FragmentTabActivity2"
-        android:label="@string/app_name"
-        android:screenOrientation="portrait"></activity>
-
-    <activity
-        android:name="com.dh.perfectoffer.demo.EventBusActivity"
-        android:label="@string/app_name"
-        android:screenOrientation="portrait"></activity>
-
-    <activity
-        android:name="com.dh.perfectoffer.demo.PostActivity"
-        android:label="@string/app_name"
-        android:screenOrientation="portrait"></activity>
-
-    <activity
-        android:name="com.dh.perfectoffer.demo.OfferRewardActivity"
-        android:label="@string/app_name"
-        android:screenOrientation="portrait"></activity>
-
-   <!-- <activity
-        android:name="demo.RegisterActivity"
-        android:screenOrientation="portrait"></activity>-->
-
-    <!--<activity
-        android:name="demo.TemplateActivity"
-        android:launchMode="singleTask"
-        android:screenOrientation="portrait"></activity>
-
-    <activity
-        android:name="demo.FriedActivity"
-        android:launchMode="singleTask"
-        android:screenOrientation="portrait"></activity>
-
-    <activity
-        android:name="demo.PersonalActivity"
-        android:launchMode="singleTask"
-        android:screenOrientation="portrait"></activity>
-
-    <activity
-        android:name="demo.PersonTemplateActivity"
-        android:launchMode="singleTask"
-        android:screenOrientation="portrait"></activity>
-
-    <activity
-        android:name="demo.PersonChangePassActivity"
-        android:launchMode="singleTask"
-        android:screenOrientation="portrait"></activity>
-
-    <activity
-        android:name="demo.PersonUpdateTempActivity"
-        android:launchMode="singleTask"
-        android:screenOrientation="portrait"></activity>
-
-    <activity
-        android:name="demo.DeliveryHistoryActivity"
-        android:launchMode="singleTask"
-        android:screenOrientation="portrait"></activity>-->
-
-    <!-- 更多 -->
-    <!-- 修改密码 -->
-    <activity
-        android:name="com.dh.perfectoffer.activity.MorePasswordActivity"
-        android:screenOrientation="portrait"></activity>
-
-    <activity
-        android:name="com.dh.perfectoffer.activity.MoreHelpActivity"
-        android:screenOrientation="portrait"></activity>
-
-    <activity
-        android:name="com.dh.perfectoffer.activity.MoreExitActivity"
-        android:screenOrientation="portrait"></activity>
-
-    <!-- 意见反馈 -->
-    <activity
-        android:name="com.dh.perfectoffer.activity.MoreFeedBackActivity"
-        android:screenOrientation="portrait"></activity>
-
-    <!-- 修改手机号 -->
-    <activity
-        android:name="com.dh.perfectoffer.activity.MorePhoneActivity"
-        android:screenOrientation="portrait"></activity>
-
-    <activity
-        android:name="com.dh.perfectoffer.activity.MoreRelateActivity"
-        android:screenOrientation="portrait"></activity>
-
-    <activity
-        android:name="com.dh.perfectoffer.activity.MoreUpdateActivity"
-        android:screenOrientation="portrait"></activity>
-
-    <!-- 公司详情 -->
-    <activity
-        android:name="com.dh.perfectoffer.activity.CompanyActivity"
-        android:screenOrientation="portrait"></activity>
-    <!-- 推荐历史 -->
-    <activity
-        android:name="com.dh.perfectoffer.activity.OfficeInfomationActivity"
-        android:screenOrientation="portrait"></activity>
-    <!-- 职位详情 -->
-
-
-    <activity
-        android:name="com.dh.perfectoffer.activity.HistoryResumeActivity"
-        android:screenOrientation="portrait"></activity>
-    <!-- 简历管理 -->
-<!--
-    <activity
-        android:name="com.dh.perfectoffer.activity.RecommendationActivity"
-        android:screenOrientation="portrait"></activity>
--->
-
-    <!-- 简历选择 -->
-
-
-  <!--  <activity
-        android:name="com.dh.perfectoffer.activity.ResumeChooseAcitity"
-        android:screenOrientation="portrait"></activity>
--->
-    <!-- 积分 -->
-    <activity
-        android:name="com.dh.perfectoffer.activity.IntegralActivity"
-        android:screenOrientation="portrait"></activity>
-    <!-- 所属公司 -->
-    <activity
-        android:name="com.dh.perfectoffer.activity.OwnedCompanyActivity"
-        android:screenOrientation="portrait"></activity>
-    <activity
-        android:name="com.dh.perfectoffer.activity.SplashActivity"
-        android:screenOrientation="portrait"
-        android:windowSoftInputMode="stateHidden|adjustResize">
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
-    </activity>
-</application>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <!-- 往sdcard中写入数据的权限 -->
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
     <!-- 在sdcard中创建/删除文件的权限 -->
-    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"></uses-permission>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+
+    <application
+        android:name=".VehicleApp"
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activity.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.RegisterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SearchActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".demo.FragmentTabActivity2"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light"/>
+        <activity
+            android:name=".demo.EventBusActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".demo.PostActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".demo.OfferRewardActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+
+        <!--
+             <activity
+             android:name="demo.RegisterActivity"
+             android:screenOrientation="portrait"></activity>
+        -->
+
+
+        <!--
+        <activity
+            android:name="demo.TemplateActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name="demo.FriedActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name="demo.PersonalActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name="demo.PersonTemplateActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name="demo.PersonChangePassActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name="demo.PersonUpdateTempActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name="demo.DeliveryHistoryActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"></activity>
+        -->
+
+
+        <!-- 更多 -->
+        <!-- 修改密码 -->
+        <activity
+            android:name=".activity.MorePasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MoreHelpActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MoreExitActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 意见反馈 -->
+        <activity
+            android:name=".activity.MoreFeedBackActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 修改手机号 -->
+        <activity
+            android:name=".activity.MorePhoneActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MoreRelateActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MoreUpdateActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 公司详情 -->
+        <activity
+            android:name=".activity.CompanyActivity"
+            android:screenOrientation="portrait" />
+        <!-- 推荐历史 -->
+        <activity
+            android:name=".activity.OfficeInfomationActivity"
+            android:screenOrientation="portrait" />
+        <!-- 职位详情 -->
+
+        <activity
+            android:name=".activity.HistoryResumeActivity"
+            android:screenOrientation="portrait" />
+        <!-- 简历管理 -->
+        <!--
+            <activity
+                android:name="com.dh.perfectoffer.activity.RecommendationActivity"
+                android:screenOrientation="portrait"></activity>
+        -->
+
+
+        <!-- 简历选择 -->
+
+
+        <!--
+              <activity
+              android:name="com.dh.perfectoffer.activity.ResumeChooseAcitity"
+              android:screenOrientation="portrait"></activity>
+        -->
+        <!-- 积分 -->
+        <activity
+            android:name=".activity.IntegralActivity"
+            android:screenOrientation="portrait" />
+        <!-- 所属公司 -->
+        <activity
+            android:name=".activity.OwnedCompanyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SplashActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
 
 </manifest>

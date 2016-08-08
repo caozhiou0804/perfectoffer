@@ -19,90 +19,108 @@ import android.widget.Button;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.dh.perfectoffer.event.framework.net.fgview.Response.ErrorMsg;
 import com.dh.perfectoffer.R;
 import com.dh.perfectoffer.VehicleApp;
 import com.dh.perfectoffer.constant.Constant;
+import com.dh.perfectoffer.dhutils.swipbackhelper.SwipeBackHelper;
 import com.dh.perfectoffer.event.framework.db.AfeiDb;
+import com.dh.perfectoffer.event.framework.net.fgview.Response.ErrorMsg;
 
 public class VehicleActivity extends FragmentActivity implements
-		View.OnClickListener {
+        View.OnClickListener {
 
-	protected Button btn_top_right;
+    protected Button btn_top_right;
 
-	private WindowManager windowManager;
-	private WindowManager.LayoutParams fluctuateParam;
-	private boolean isShowFluctuate;
-	public AfeiDb afeiDb;
+    private WindowManager windowManager;
+    private WindowManager.LayoutParams fluctuateParam;
+    private boolean isShowFluctuate;
+    public AfeiDb afeiDb;
 
-	protected void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
-		requestWindowFeature(Window.FEATURE_NO_TITLE);
-		VehicleApp.getInstance().addActivity(this);
-		afeiDb = VehicleApp.getInstance().getAfeiDb();
-		if (null == afeiDb) {
-			afeiDb = AfeiDb.create(this, Constant.DB_NAME, true);
-		}
-	}
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        VehicleApp.getInstance().addActivity(this);
+        afeiDb = VehicleApp.getInstance().getAfeiDb();
+        if (null == afeiDb) {
+            afeiDb = AfeiDb.create(this, Constant.DB_NAME, true);
+        }
+        //左滑
+        SwipeBackHelper.onCreate(this);
+        SwipeBackHelper.getCurrentPage(this)
+                .setSwipeBackEnable(true)
+                .setSwipeSensitivity(0.5f)
+                .setSwipeRelateEnable(true)
+                .setSwipeRelateOffset(300);
+    }
 
-	protected void initTop() {
-		RelativeLayout btn_back = (RelativeLayout) this
-				.findViewById(R.id.btn_title_btn_back_layout);
-		if (null != btn_back) {
-			btn_back.setOnClickListener(this);
-		}
-		btn_top_right = (Button) findViewById(R.id.btn_top_right);
-		if (null != btn_top_right) {
-			btn_top_right.setOnClickListener(this);
-		}
-	}
+    @Override
+    protected void onPostCreate(Bundle savedInstanceState) {
+        super.onPostCreate(savedInstanceState);
+        SwipeBackHelper.onPostCreate(this);
+    }
 
-	public void launch(Class<? extends Activity> clazz) {
-		launch(new Intent(this, clazz));
-	}
 
-	public void launch(Intent intent) {
-		startActivity(intent);
-	}
+    protected void initTop() {
+        RelativeLayout btn_back = (RelativeLayout) this
+                .findViewById(R.id.btn_title_btn_back_layout);
+        if (null != btn_back) {
+            btn_back.setOnClickListener(this);
+        }
+        btn_top_right = (Button) findViewById(R.id.btn_top_right);
+        if (null != btn_top_right) {
+            btn_top_right.setOnClickListener(this);
+        }
+    }
 
-	@Override
-	protected void onDestroy() {
-		super.onDestroy();
-		VehicleApp.getInstance().getActivitys().remove(this); // 退出时从集合中拿出
-	}
+    public void launch(Class<? extends Activity> clazz) {
+        launch(new Intent(this, clazz));
+    }
 
-	public void setTitle(String title) {
-		super.setTitle(title);
-		((TextView) this.findViewById(R.id.tv_title_name)).setText(title);
-	}
+    public void launch(Intent intent) {
+        startActivity(intent);
+    }
 
-	public void setTitle(int titleId) {
-		super.setTitle(titleId);
-		((TextView) this.findViewById(R.id.tv_title_name)).setText(titleId);
-	}
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        VehicleApp.getInstance().getActivitys().remove(this); // 退出时从集合中拿出
+        SwipeBackHelper.onDestroy(this);
+        //ViewServer.get(this).removeWindow(this);
+    }
 
-	@Override
-	public void onClick(View v) {
-		if (v.getId() == R.id.btn_title_btn_back_layout) {
-			onBackPressed();
-			return;
-		}
-	}
+    public void setTitle(String title) {
+        super.setTitle(title);
+        ((TextView) this.findViewById(R.id.tv_title_name)).setText(title);
+    }
 
-	@Override
-	protected void onResume() {
-		super.onResume();
-	}
+    public void setTitle(int titleId) {
+        super.setTitle(titleId);
+        ((TextView) this.findViewById(R.id.tv_title_name)).setText(titleId);
+    }
 
-	@Override
-	protected void onPause() {
-		super.onPause();
-	}
+    @Override
+    public void onClick(View v) {
+        if (v.getId() == R.id.btn_title_btn_back_layout) {
+            onBackPressed();
+            return;
+        }
+    }
 
-	public interface OnLoginFinishLintener {
-		public void onSuccess();
+    @Override
+    protected void onResume() {
+        super.onResume();
+        //ViewServer.get(this).setFocusedWindow(this);
+    }
 
-		public void onFailure(ErrorMsg errorMsg);
-	}
+    @Override
+    protected void onPause() {
+        super.onPause();
+    }
+
+    public interface OnLoginFinishLintener {
+        public void onSuccess();
+
+        public void onFailure(ErrorMsg errorMsg);
+    }
 
 }
